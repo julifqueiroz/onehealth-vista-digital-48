@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { ChartContainer } from '@/components/ui/chart';
-import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 const benefits = [
   {
@@ -29,24 +27,6 @@ const benefits = [
     metric: "+85%"
   }
 ];
-
-const roiData = [
-  { name: 'Economia', value: 60 },
-  { name: 'Produtividade', value: 75 },
-];
-
-const ONEHEALTH_COLORS = ['#960315', '#56B589'];
-
-const chartConfig = {
-  economia: {
-    label: 'Economia',
-    color: '#960315' // onehealth-red
-  },
-  produtividade: {
-    label: 'Produtividade',
-    color: '#56B589' // green from gradient
-  }
-};
 
 const BenefitsSection = () => {
   return (
@@ -101,30 +81,14 @@ const BenefitsSection = () => {
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center">
-              <ChartContainer 
-                config={chartConfig} 
-                className="h-64 w-full"
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={roiData}
-                      cx="50%"
-                      cy="50%"
-                      labelLine={false}
-                      outerRadius={80}
-                      innerRadius={0}
-                      dataKey="value"
-                    >
-                      {roiData.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={ONEHEALTH_COLORS[index % ONEHEALTH_COLORS.length]} />
-                      ))}
-                    </Pie>
-                    <Tooltip formatter={(value) => `${value}%`} />
-                    <Legend verticalAlign="bottom" align="center" />
-                  </PieChart>
-                </ResponsiveContainer>
-              </ChartContainer>
+              <div className="relative w-full h-64 overflow-hidden rounded-lg shadow-md">
+                <img 
+                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&q=80" 
+                  alt="Farmacêutico bem sucedido e satisfeito" 
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-onehealth-red/20 to-transparent"></div>
+              </div>
             </div>
           </div>
         </div>

@@ -52,17 +52,17 @@ const BenefitsSection = () => {
                 Nossos clientes relatam retorno sobre o investimento em menos de 6 meses após implementação do OneHealth, 
                 com economia média de 30% nos custos operacionais e aumento de 25% na margem de lucro.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <div className="bg-onehealth-gray rounded-full px-4 py-2 text-sm font-medium">
+              <div className="flex flex-wrap gap-4 rounded-md">
+                <div className="bg-onehealth-gray px-5 py-3 text-sm font-medium rounded-full">
                   Economia Operacional
                 </div>
-                <div className="bg-onehealth-gray rounded-full px-4 py-2 text-sm font-medium">
+                <div className="bg-onehealth-gray rounded-full px-5 py-3 text-sm font-medium">
                   Redução de Desperdícios
                 </div>
-                <div className="bg-onehealth-gray rounded-full px-4 py-2 text-sm font-medium">
+                <div className="bg-onehealth-gray rounded-full px-5 py-3 text-sm font-medium">
                   Aumento de Vendas
                 </div>
-                <div className="bg-onehealth-gray rounded-full px-4 py-2 text-sm font-medium">
+                <div className="bg-onehealth-gray rounded-full px-5 py-3 text-sm font-medium">
                   Fidelização de Clientes
                 </div>
               </div>

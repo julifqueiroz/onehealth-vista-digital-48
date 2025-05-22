@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/6572beee-fb1d-458a-9626-2a01f2895ed5.png" 
+              src="/lovable-uploads/66fe1e79-9128-48b0-a961-0b278cfe6779.png" 
               alt="OneHealth" 
               className="h-10 md:h-12" 
               onError={e => {

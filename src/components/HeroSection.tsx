@@ -59,18 +59,18 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="lg:w-1/2"
           >
-            <div className="relative mx-auto max-w-lg">
+            <div className="relative mx-auto max-w-sm">
               {/* Notebook base/desk effect */}
-              <div className="absolute -bottom-6 w-[85%] h-4 bg-gradient-to-t from-gray-800 to-gray-600 rounded-[50%] left-[7.5%] blur-md opacity-40"></div>
+              <div className="absolute -bottom-4 w-[85%] h-3 bg-gradient-to-t from-gray-800 to-gray-600 rounded-[50%] left-[7.5%] blur-md opacity-40"></div>
               
               {/* Notebook base */}
               <div className="relative">
                 {/* Screen part */}
-                <div className="bg-gray-800 rounded-t-lg pt-3 px-2 pb-1 shadow-lg">
-                  <div className="flex space-x-2 mb-1 ml-1">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg">
+                  <div className="flex space-x-1.5 mb-1 ml-1">
+                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
+                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
                   </div>
                   <div className="overflow-hidden border-t border-gray-700 relative">
                     {/* Dashboard image filling the screen */}
@@ -86,14 +86,14 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Keyboard part */}
-                <div className="bg-gray-300 h-3 rounded-b-xl mt-[1px]"></div>
+                <div className="bg-gray-300 h-2 rounded-b-xl mt-[1px]"></div>
                 <div className="bg-gray-400 h-1 w-[70%] mx-auto rounded-b-xl"></div>
               </div>
               
               {/* Stats badge */}
-              <div className="absolute -right-5 -bottom-10 bg-onehealth-red rounded-lg p-4 shadow-lg text-white">
+              <div className="absolute -right-4 -bottom-8 bg-onehealth-red rounded-lg p-3 shadow-lg text-white text-xs">
                 <p className="font-bold">+ de 500</p>
-                <p className="text-sm">farmácias utilizando</p>
+                <p>farmácias utilizando</p>
               </div>
             </div>
           </motion.div>

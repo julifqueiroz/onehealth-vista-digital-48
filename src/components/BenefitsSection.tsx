@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { ChartContainer } from '@/components/ui/chart';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const benefits = [
   {
@@ -27,6 +29,26 @@ const benefits = [
     metric: "+85%"
   }
 ];
+
+const roiData = [
+  { month: 'Mês 1', economia: 10, produtividade: 15 },
+  { month: 'Mês 2', economia: 20, produtividade: 25 },
+  { month: 'Mês 3', economia: 30, produtividade: 35 },
+  { month: 'Mês 4', economia: 40, produtividade: 45 },
+  { month: 'Mês 5', economia: 50, produtividade: 60 },
+  { month: 'Mês 6', economia: 60, produtividade: 75 },
+];
+
+const chartConfig = {
+  economia: {
+    label: 'Economia',
+    color: '#960315' // onehealth-red
+  },
+  produtividade: {
+    label: 'Produtividade',
+    color: '#56B589' // green from gradient
+  }
+};
 
 const BenefitsSection = () => {
   return (
@@ -81,34 +103,19 @@ const BenefitsSection = () => {
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center">
-              <div className="relative">
-                <svg className="w-48 h-48" viewBox="0 0 100 100">
-                  <circle cx="50" cy="50" r="45" fill="none" stroke="#EEEEEE" strokeWidth="8" />
-                  <circle 
-                    cx="50" 
-                    cy="50" 
-                    r="45" 
-                    fill="none" 
-                    stroke="url(#gradient)" 
-                    strokeWidth="8" 
-                    strokeDasharray="283"
-                    strokeDashoffset="70"
-                    strokeLinecap="round"
-                  />
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="#005CB9" />
-                      <stop offset="100%" stopColor="#56B589" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <span className="text-4xl font-bold text-onehealth-blue">75%</span>
-                    <span className="block text-sm text-gray-600">ROI Médio</span>
-                  </div>
-                </div>
-              </div>
+              <ChartContainer 
+                config={chartConfig} 
+                className="h-64 w-full"
+              >
+                <BarChart data={roiData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="month" />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="economia" fill="#960315" name="Economia" />
+                  <Bar dataKey="produtividade" fill="#56B589" name="Produtividade" />
+                </BarChart>
+              </ChartContainer>
             </div>
           </div>
         </div>

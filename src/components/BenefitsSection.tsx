@@ -83,8 +83,8 @@ const BenefitsSection = () => {
             <div className="md:w-1/3 flex justify-center">
               <div className="relative w-full h-64 overflow-hidden rounded-lg shadow-md">
                 <img 
-                  src="https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&q=80" 
-                  alt="Farmacêutico bem sucedido e satisfeito" 
+                  src="https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&q=80" 
+                  alt="Farmacêutico bem sucedido e satisfeito com sua farmácia" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onehealth-red/20 to-transparent"></div>

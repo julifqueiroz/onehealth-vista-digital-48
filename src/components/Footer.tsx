@@ -1,12 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-onehealth-darkblue text-white pt-16 pb-8">
+  return <footer className="bg-onehealth-darkblue text-white pt-16 pb-8 bg-gray-500">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
@@ -16,9 +12,7 @@ const Footer = () => {
                 <span className="text-onehealth-green">Health</span>
               </span>
             </div>
-            <p className="text-gray-300 mb-6">
-              Transformando a gestão de farmácias de manipulação com tecnologia e inovação desde 2015.
-            </p>
+            <p className="text-gray-300 mb-6">Transformando a gestão de farmácias de manipulação com tecnologia e inovação.</p>
             <div className="flex space-x-4">
               <a href="#" className="text-white hover:text-onehealth-green transition-colors">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -77,12 +71,8 @@ const Footer = () => {
               Receba novidades, dicas e promoções diretamente no seu e-mail
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
-              <input 
-                type="email" 
-                placeholder="Seu e-mail" 
-                className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-onehealth-green bg-gray-700 text-white placeholder-gray-400"
-              />
-              <Button className="bg-onehealth-green hover:bg-opacity-90 whitespace-nowrap">
+              <input type="email" placeholder="Seu e-mail" className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-onehealth-green bg-gray-700 text-white placeholder-gray-400" />
+              <Button className="bg-onehealth-green hover:bg-opacity-90 whitespace-nowrap bg-[960315] bg-[#940315]">
                 Inscrever-se
               </Button>
             </div>
@@ -103,8 +93,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;

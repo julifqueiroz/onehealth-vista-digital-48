@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ChartContainer } from '@/components/ui/chart';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 const benefits = [
   {
@@ -31,13 +31,11 @@ const benefits = [
 ];
 
 const roiData = [
-  { month: 'Mês 1', economia: 10, produtividade: 15 },
-  { month: 'Mês 2', economia: 20, produtividade: 25 },
-  { month: 'Mês 3', economia: 30, produtividade: 35 },
-  { month: 'Mês 4', economia: 40, produtividade: 45 },
-  { month: 'Mês 5', economia: 50, produtividade: 60 },
-  { month: 'Mês 6', economia: 60, produtividade: 75 },
+  { name: 'Economia', value: 60 },
+  { name: 'Produtividade', value: 75 },
 ];
+
+const ONEHEALTH_COLORS = ['#960315', '#56B589'];
 
 const chartConfig = {
   economia: {
@@ -107,14 +105,25 @@ const BenefitsSection = () => {
                 config={chartConfig} 
                 className="h-64 w-full"
               >
-                <BarChart data={roiData}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="month" />
-                  <YAxis />
-                  <Tooltip />
-                  <Bar dataKey="economia" fill="#960315" name="Economia" />
-                  <Bar dataKey="produtividade" fill="#56B589" name="Produtividade" />
-                </BarChart>
+                <ResponsiveContainer width="100%" height="100%">
+                  <PieChart>
+                    <Pie
+                      data={roiData}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      outerRadius={80}
+                      innerRadius={0}
+                      dataKey="value"
+                    >
+                      {roiData.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={ONEHEALTH_COLORS[index % ONEHEALTH_COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip formatter={(value) => `${value}%`} />
+                    <Legend verticalAlign="bottom" align="center" />
+                  </PieChart>
+                </ResponsiveContainer>
               </ChartContainer>
             </div>
           </div>

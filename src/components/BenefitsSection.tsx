@@ -68,10 +68,7 @@ const BenefitsSection = () => {
               </div>
             </div>
             <div className="md:w-1/3 flex justify-center">
-              <div className="relative w-full h-64 overflow-hidden rounded-lg shadow-md">
-                <img src="/lovable-uploads/7b85d1f8-d347-4198-91a7-22e4bb35a258.png" alt="Farmacêutico bem sucedido e satisfeito com sua farmácia" className="h-center object-top object-top" />
-                <div className="absolute inset-0 bg-gradient-to-t from-onehealth-red/20 to-transparent"></div>
-              </div>
+              
             </div>
           </div>
         </div>

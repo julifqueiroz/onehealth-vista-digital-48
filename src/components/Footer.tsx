@@ -72,7 +72,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-2">
               <input type="email" placeholder="Seu e-mail" className="px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-onehealth-green bg-gray-700 text-white placeholder-gray-400" />
-              <Button className="bg-onehealth-green hover:bg-opacity-90 whitespace-nowrap bg-[960315] bg-[#940315]">
+              <Button className="bg-onehealth-green hover:bg-opacity-90 whitespace-nowrap bg-[960315] bg-[#940315] text-center px-[5px]">
                 Inscrever-se
               </Button>
             </div>

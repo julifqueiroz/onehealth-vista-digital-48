@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Dra. Marina Silva",
     position: "Proprietária, Farmácia Vitafarma",
-    quote: "Implementar o OneHealth foi a melhor decisão que tomamos. O sistema simplificou nossos processos e aumentou nossa produtividade em 40%. O controle das margens é incomparável!",
+    quote: "A migração para o OneHealth foi praticamente instantânea, garantindo total segurança e integridade das nossas informações. Em poucos dias, já estávamos operando com 100% dos nossos dados preservados!",
     image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
   },
   {

@@ -37,7 +37,7 @@ const FeaturesSection = () => {
   return <section id="features" className="py-1 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-4xl md:text-4xl font-bold mb-4">
             Funcionalidades <span className="text-gradient">Inovadoras</span>
           </h2>
           <p className="text-gray-700 max-w-3xl mx-auto">

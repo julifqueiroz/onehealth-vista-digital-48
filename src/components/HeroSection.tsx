@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
@@ -60,7 +59,9 @@ const HeroSection = () => {
               {/* Notebook base */}
               <div className="relative">
                 {/* Screen part - making it more horizontal */}
-                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg" style={{ aspectRatio: '16/9' }}>
+                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg" style={{
+                aspectRatio: '16/9'
+              }}>
                   <div className="flex space-x-1.5 mb-1 ml-1">
                     <div className="w-2 h-2 rounded-full bg-red-500"></div>
                     <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
@@ -70,7 +71,7 @@ const HeroSection = () => {
                     {/* Dashboard image filling the screen */}
                     <img src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" alt="OneHealth Dashboard" onError={e => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                  }} className="w-full h-full object-cover" />
+                  }} className="w-full h-full object-fill" />
                   </div>
                 </div>
                 

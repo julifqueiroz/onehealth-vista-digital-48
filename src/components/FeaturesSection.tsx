@@ -55,7 +55,7 @@ const FeaturesSection = () => {
         </div>
         
         <div className="mt-12 bg-gray-50 rounded-xl p-8 border border-gray-100">
-          <h3 className="text-2xl font-bold mb-6 text-center">
+          <h3 className="text-4xl font-bold mb-6 text-center">
             <span className="text-gradient">Única Ferramenta pensada para Redes Franqueadoras</span>
           </h3>
           

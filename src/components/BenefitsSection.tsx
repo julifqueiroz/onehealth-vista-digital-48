@@ -11,7 +11,7 @@ const benefits = [
   {
     id: 2,
     title: "Redução de Custos",
-    description: "Minimize desperdícios e otimize o gerenciamento de estoque, reduzindo custos operacionais.",
+    description: "Elimine gastos com servidores físicos e suporte técnico presencial, reduzindo drasticamente os custos de infraestrutura de TI.",
     metric: "-30%"
   },
   {

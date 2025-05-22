@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
@@ -52,30 +53,30 @@ const HeroSection = () => {
           duration: 0.6,
           delay: 0.3
         }} className="lg:w-1/2">
-            <div className="relative mx-auto max-w-sm">
+            <div className="relative mx-auto max-w-md">
               {/* Notebook base/desk effect */}
               <div className="absolute -bottom-4 w-[85%] h-3 bg-gradient-to-t from-gray-800 to-gray-600 rounded-[50%] left-[7.5%] blur-md opacity-40"></div>
               
               {/* Notebook base */}
               <div className="relative">
-                {/* Screen part */}
-                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg">
+                {/* Screen part - making it more horizontal */}
+                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg" style={{ aspectRatio: '16/9' }}>
                   <div className="flex space-x-1.5 mb-1 ml-1">
                     <div className="w-2 h-2 rounded-full bg-red-500"></div>
                     <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
                   </div>
-                  <div className="overflow-hidden border-t border-gray-700 relative">
+                  <div className="overflow-hidden border-t border-gray-700 relative h-[calc(100%-16px)]">
                     {/* Dashboard image filling the screen */}
                     <img src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" alt="OneHealth Dashboard" onError={e => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                  }} className="w-full h-full object-scale-down" />
+                  }} className="w-full h-full object-cover" />
                   </div>
                 </div>
                 
-                {/* Keyboard part */}
-                <div className="bg-gray-300 h-2 rounded-b-xl mt-[1px]"></div>
-                <div className="bg-gray-400 h-1 w-[70%] mx-auto rounded-b-xl"></div>
+                {/* Keyboard part - adjusted for more horizontal look */}
+                <div className="bg-gray-300 h-3 rounded-b-xl mt-[1px]"></div>
+                <div className="bg-gray-400 h-1.5 w-[80%] mx-auto rounded-b-xl"></div>
               </div>
               
               {/* Stats badge */}

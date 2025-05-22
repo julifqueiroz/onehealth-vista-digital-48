@@ -67,9 +67,9 @@ const HeroSection = () => {
                   </div>
                   <div className="overflow-hidden border-t border-gray-700 relative">
                     {/* Dashboard image filling the screen */}
-                    <img src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" alt="OneHealth Dashboard" className="w-full h-full object-cover" onError={e => {
+                    <img src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" alt="OneHealth Dashboard" onError={e => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                  }} />
+                  }} className="w-full h-full object-scale-down" />
                   </div>
                 </div>
                 
@@ -79,10 +79,7 @@ const HeroSection = () => {
               </div>
               
               {/* Stats badge */}
-              <div className="absolute -right-4 -bottom-8 bg-onehealth-red rounded-lg p-3 shadow-lg text-white text-xs">
-                <p className="font-bold">+ de 500</p>
-                <p>farmácias utilizando</p>
-              </div>
+              
             </div>
           </motion.div>
         </div>

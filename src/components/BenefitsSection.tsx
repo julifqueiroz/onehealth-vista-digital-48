@@ -44,7 +44,7 @@ const BenefitsSection = () => {
             </div>)}
         </div>
         
-        <div className="mt-16 bg-white rounded-xl p-8 shadow-lg">
+        <div className="mt-16 bg-white rounded-xl p-8 shadow-lg px-[35px] py-[25px]">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-2/3 mb-8 md:mb-0">
               <h3 className="text-2xl font-bold mb-4">ROI Garantido</h3>

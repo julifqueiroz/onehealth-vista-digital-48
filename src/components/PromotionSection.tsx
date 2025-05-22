@@ -1,11 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-
 const PromotionSection = () => {
-  return (
-    <section id="promotion" className="py-20 relative bg-onehealth-gray overflow-hidden">
+  return <section id="promotion" className="py-20 relative bg-onehealth-gray overflow-hidden">
       {/* Background decoration */}
       <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-onehealth-blue opacity-10"></div>
       <div className="absolute bottom-10 -left-10 w-32 h-32 rounded-full bg-onehealth-green opacity-10"></div>
@@ -15,9 +12,7 @@ const PromotionSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Promoção <span className="text-gradient">Exclusiva</span>
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto">
-            Oferta por tempo limitado: Condições especiais para quem implementar o OneHealth até 30 de Junho de 2025.
-          </p>
+          <p className="text-gray-700 max-w-3xl mx-auto text-xl font-normal">Oferta por tempo limitado: Condições especiais para quem implementar o OneHealth até 30 de Junho de 2025.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -44,7 +39,7 @@ const PromotionSection = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <div>
+                <div className="dddd">
                   <strong>20% de desconto</strong> nas 6 primeiras mensalidades
                 </div>
               </li>
@@ -71,12 +66,9 @@ const PromotionSection = () => {
             </ul>
             
             <div className="mt-auto">
-              <Button 
-                className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue transition-colors"
-                onClick={() => {
-                  window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Quero aproveitar a promoção especial do OneHealth para minha farmácia", "_blank");
-                }}
-              >
+              <Button className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue transition-colors" onClick={() => {
+              window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Quero aproveitar a promoção especial do OneHealth para minha farmácia", "_blank");
+            }}>
                 Garanta Esta Oferta
               </Button>
             </div>
@@ -132,12 +124,9 @@ const PromotionSection = () => {
             </ul>
             
             <div className="mt-auto">
-              <Button 
-                className="w-full bg-onehealth-green hover:opacity-90 transition-colors"
-                onClick={() => {
-                  window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Quero participar do programa de indicação do OneHealth", "_blank");
-                }}
-              >
+              <Button className="w-full bg-onehealth-green hover:opacity-90 transition-colors" onClick={() => {
+              window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Quero participar do programa de indicação do OneHealth", "_blank");
+            }}>
                 Participar do Programa
               </Button>
             </div>
@@ -150,8 +139,6 @@ const PromotionSection = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default PromotionSection;

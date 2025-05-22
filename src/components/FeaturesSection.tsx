@@ -34,7 +34,7 @@ const features = [{
   icon: "✓"
 }];
 const FeaturesSection = () => {
-  return <section id="features" className="py-20 bg-white">
+  return <section id="features" className="py-1 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -99,15 +99,7 @@ const FeaturesSection = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <a href="#" className="text-onehealth-red hover:text-onehealth-darkred transition-colors text-lg font-medium inline-flex items-center" onClick={e => {
-          e.preventDefault();
-          window.open("https://www.onehealth.tec.br/funcionalidades", "_blank");
-        }}>
-            Ver todas as funcionalidades
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-            </svg>
-          </a>
+          
         </div>
       </div>
     </section>;

@@ -85,7 +85,7 @@ const BenefitsSection = () => {
                 <img 
                   src="/lovable-uploads/7b85d1f8-d347-4198-91a7-22e4bb35a258.png" 
                   alt="Farmacêutico bem sucedido e satisfeito com sua farmácia" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onehealth-red/20 to-transparent"></div>
               </div>

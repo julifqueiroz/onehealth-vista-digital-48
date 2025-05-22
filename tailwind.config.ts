@@ -64,10 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				onehealth: {
-					blue: '#005CB9',
-					green: '#56B589',
-					darkblue: '#023E7D',
-					lightblue: '#56CCF2',
+					red: '#960315',
+					darkred: '#720210',
+					lightred: '#c5052a',
+					maroon: '#800020',
+					burgundy: '#a52a2a',
 					gray: '#F2F6FA'
 				}
 			},
@@ -124,7 +125,7 @@ export default {
 				'montserrat': ['Montserrat', 'sans-serif']
 			},
 			backgroundImage: {
-				'gradient-onehealth': 'linear-gradient(135deg, #005CB9 0%, #56B589 100%)'
+				'gradient-onehealth': 'linear-gradient(135deg, #960315 0%, #c5052a 100%)'
 			}
 		}
 	},

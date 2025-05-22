@@ -35,21 +35,21 @@ const Header = () => {
             />
             <div id="logo-text" className="hidden">
               <span className="font-bold text-2xl">
-                <span className="text-onehealth-blue">One</span>
-                <span className="text-onehealth-green">Health</span>
+                <span className="text-onehealth-red">One</span>
+                <span className="text-onehealth-burgundy">Health</span>
               </span>
             </div>
           </div>
           
           <nav className="hidden md:flex gap-6 items-center">
-            <a href="#features" className="text-gray-800 hover:text-onehealth-blue transition-colors">Funcionalidades</a>
-            <a href="#benefits" className="text-gray-800 hover:text-onehealth-blue transition-colors">Benefícios</a>
-            <a href="#testimonials" className="text-gray-800 hover:text-onehealth-blue transition-colors">Depoimentos</a>
-            <a href="#promotion" className="text-gray-800 hover:text-onehealth-blue transition-colors">Promoções</a>
+            <a href="#features" className="text-gray-800 hover:text-onehealth-red transition-colors">Funcionalidades</a>
+            <a href="#benefits" className="text-gray-800 hover:text-onehealth-red transition-colors">Benefícios</a>
+            <a href="#testimonials" className="text-gray-800 hover:text-onehealth-red transition-colors">Depoimentos</a>
+            <a href="#promotion" className="text-gray-800 hover:text-onehealth-red transition-colors">Promoções</a>
           </nav>
           
           <Button 
-            className="bg-onehealth-blue hover:bg-onehealth-darkblue transition-colors"
+            className="bg-onehealth-red hover:bg-onehealth-darkred transition-colors"
             onClick={() => {
               window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Estou interessado em conhecer o OneHealth para minha farmácia de manipulação", "_blank");
             }}

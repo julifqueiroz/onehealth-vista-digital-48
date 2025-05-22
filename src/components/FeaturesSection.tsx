@@ -19,9 +19,9 @@ const features = [
     icon: "📋"
   },
   {
-    title: "PBM e Convênios Integrados",
-    description: "Gerencie programas de benefícios de medicamentos e convênios em uma única plataforma.",
-    icon: "💳"
+    title: "Sistema 100% Online (SaaS)",
+    description: "Acesse de qualquer lugar, sem custos de infraestrutura. Atualizações automáticas e suporte contínuo inclusos.",
+    icon: "☁️"
   },
   {
     title: "Dashboard Financeiro",
@@ -34,9 +34,9 @@ const features = [
     icon: "👤"
   },
   {
-    title: "CRM Integrado",
-    description: "Realize campanhas de marketing dirigidas e acompanhe o ciclo de vida dos seus clientes.",
-    icon: "🎯"
+    title: "Gestão de Redes Franqueadas",
+    description: "Controle completo da operação de cada unidade franqueada com padronização de processos e análise comparativa.",
+    icon: "🏢"
   },
   {
     title: "Gestão de Processos RDC",
@@ -63,7 +63,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <Card 
               key={index} 
-              className="feature-card hover:border-onehealth-green hover:-translate-y-1"
+              className="feature-card hover:border-onehealth-red hover:-translate-y-1"
             >
               <div className="text-4xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
@@ -72,10 +72,54 @@ const FeaturesSection = () => {
           ))}
         </div>
         
+        <div className="mt-12 bg-gray-50 rounded-xl p-8 border border-gray-100">
+          <h3 className="text-2xl font-bold mb-6 text-center">
+            <span className="text-gradient">Única Ferramenta para Redes Franqueadoras</span>
+          </h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h4 className="text-lg font-bold mb-3 text-onehealth-red">Gestão Centralizada</h4>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Controle de todas as unidades em um único dashboard</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Análise comparativa de performance entre franquias</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Gestão de metas e indicadores por unidade</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h4 className="text-lg font-bold mb-3 text-onehealth-red">Padronização de Processos</h4>
+              <ul className="space-y-2">
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Fórmulas e processos padronizados em todas as unidades</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Controle de qualidade garantido em todas as franquias</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-onehealth-red mr-2">✓</span>
+                  <span>Replicação automática de boas práticas para toda a rede</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
         <div className="mt-16 text-center">
           <a 
             href="#" 
-            className="text-onehealth-blue hover:text-onehealth-green transition-colors text-lg font-medium inline-flex items-center"
+            className="text-onehealth-red hover:text-onehealth-darkred transition-colors text-lg font-medium inline-flex items-center"
             onClick={(e) => {
               e.preventDefault();
               window.open("https://www.onehealth.tec.br/funcionalidades", "_blank");

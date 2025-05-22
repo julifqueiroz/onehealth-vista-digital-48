@@ -15,7 +15,7 @@ const HeroSection = () => {
             className="lg:w-1/2 text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Revolucione sua <span className="text-gradient">Farmácia de Manipulação</span> com o <span className="text-onehealth-blue">OneHealth</span>
+              Revolucione sua <span className="text-gradient">Farmácia de Manipulação</span> com o <span className="text-onehealth-red">OneHealth</span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -36,7 +36,7 @@ const HeroSection = () => {
               <Button 
                 size="lg"
                 variant="outline"
-                className="border-onehealth-blue text-onehealth-blue hover:bg-onehealth-blue hover:text-white transition-all duration-300 text-base"
+                className="border-onehealth-red text-onehealth-red hover:bg-onehealth-red hover:text-white transition-all duration-300 text-base"
                 onClick={() => {
                   window.location.href = "#features";
                 }}
@@ -49,7 +49,7 @@ const HeroSection = () => {
               <p className="text-sm text-gray-600 font-medium">
                 Oferta Especial: Condições exclusivas até 30 de Junho/2025
               </p>
-              <span className="animate-pulse-scale inline-flex h-3 w-3 rounded-full bg-onehealth-green"></span>
+              <span className="animate-pulse-scale inline-flex h-3 w-3 rounded-full bg-onehealth-red"></span>
             </div>
           </motion.div>
           
@@ -60,17 +60,17 @@ const HeroSection = () => {
             className="lg:w-1/2"
           >
             <div className="relative">
-              <div className="absolute -top-4 -left-4 w-full h-full bg-onehealth-blue opacity-10 rounded-xl"></div>
+              <div className="absolute -top-4 -left-4 w-full h-full bg-onehealth-red opacity-10 rounded-xl"></div>
               <img 
-                src="/dashboard-mockup.png" 
+                src="/notebook-mockup.png" 
                 alt="OneHealth Dashboard" 
                 className="rounded-xl shadow-2xl relative z-10 w-full"
                 onError={(e) => {
-                  e.currentTarget.src = "https://via.placeholder.com/600x400?text=OneHealth+Dashboard";
+                  e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
                 }}
               />
               
-              <div className="absolute -right-5 -bottom-5 bg-onehealth-green rounded-lg p-4 shadow-lg text-white">
+              <div className="absolute -right-5 -bottom-5 bg-onehealth-red rounded-lg p-4 shadow-lg text-white">
                 <p className="font-bold">+ de 500</p>
                 <p className="text-sm">farmácias utilizando</p>
               </div>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -12,7 +13,7 @@ const PromotionSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Promoção <span className="text-gradient">Exclusiva</span>
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto text-xl font-normal">Oferta por tempo limitado: Condições especiais para quem assinar contrato de adesão do OneHealth até 30 de Junho de 2025.</p>
+          <p className="text-gray-700 max-w-3xl mx-auto text-xl font-normal">Oferta por tempo limitado: Condições especiais para quem assinar contrato de adesão do OneHealth até 30 de Junho de 2025.</p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -39,8 +40,8 @@ const PromotionSection = () => {
                     <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                   </svg>
                 </div>
-                <div className="dddd">
-                  <strong>20% de desconto</strong> nas 6 primeiras mensalidades
+                <div>
+                  <strong>20% de desconto</strong> nas 3 primeiras mensalidades
                 </div>
               </li>
               <li className="flex items-start">
@@ -98,17 +99,7 @@ const PromotionSection = () => {
                   </svg>
                 </div>
                 <div>
-                  <strong>15% de cashback</strong> por 12 meses para a farmácia indicada
-                </div>
-              </li>
-              <li className="flex items-start">
-                <div className="bg-onehealth-green/10 p-1 rounded-full mr-3 mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-onehealth-green" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <strong>Acesso gratuito</strong> ao módulo de CRM avançado por 6 meses
+                  <strong>20% de cashback</strong> por 06 meses para a farmácia indicada
                 </div>
               </li>
               <li className="flex items-start">

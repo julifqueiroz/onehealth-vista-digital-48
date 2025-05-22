@@ -96,7 +96,7 @@ const ContactSection = () => {
                 <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar sua farmácia?" rows={4} />
               </div>
               
-              <Button type="submit" className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue">
+              <Button type="submit" className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue text-[960315] text-[#970315]">
                 Enviar Mensagem
               </Button>
             </form>

@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
             
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-2">
-              <p className="text-sm text-gray-600 font-bold">Oferta Especial: Condições exclusivas até 30 de Junho 2025</p>
+              <p className="text-sm text-gray-600 font-bold">OFERTA ESPECIAL: Condições exclusivas até 30 de Junho 2025</p>
               <span className="animate-pulse-scale inline-flex h-3 w-3 rounded-full bg-onehealth-red"></span>
             </div>
           </motion.div>

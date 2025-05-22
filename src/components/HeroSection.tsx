@@ -61,14 +61,25 @@ const HeroSection = () => {
           >
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-full h-full bg-onehealth-red opacity-10 rounded-xl"></div>
-              <img 
-                src="/notebook-mockup.png" 
-                alt="OneHealth Dashboard" 
-                className="rounded-xl shadow-2xl relative z-10 w-full"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                }}
-              />
+              <div className="rounded-xl shadow-2xl relative z-10 overflow-hidden">
+                <div className="bg-gray-800 p-2 pt-3 rounded-t-xl">
+                  <div className="flex space-x-2 mb-1">
+                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <img 
+                    src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" 
+                    alt="OneHealth Dashboard" 
+                    className="w-full object-cover border-t border-gray-700"
+                    onError={(e) => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
+                    }}
+                  />
+                </div>
+                <div className="bg-gray-900 h-3 rounded-b-xl"></div>
+                <div className="bg-gray-800 h-1 w-[70%] mx-auto rounded-b-xl"></div>
+              </div>
               
               <div className="absolute -right-5 -bottom-5 bg-onehealth-red rounded-lg p-4 shadow-lg text-white">
                 <p className="font-bold">+ de 500</p>

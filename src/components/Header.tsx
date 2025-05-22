@@ -30,14 +30,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <img 
-              src="/onehealth-logo.png" 
+              src="/lovable-uploads/66fe1e79-9128-48b0-a961-0b278cfe6779.png" 
               alt="OneHealth" 
+              className="h-10 md:h-12"
               onError={(e) => {
                 // Fallback to text if logo image fails to load
                 e.currentTarget.style.display = 'none';
                 document.getElementById('logo-text')!.style.display = 'block';
               }}
-              className="h-10"
             />
             <div id="logo-text" className="hidden">
               <span className="font-bold text-2xl">

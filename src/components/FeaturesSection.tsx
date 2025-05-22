@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 
@@ -14,9 +13,9 @@ const features = [
     icon: "📦"
   },
   {
-    title: "Integração com Prescrição Digital",
-    description: "Receba prescrições digitalmente, eliminando erros de transcrição manual e agilizando o atendimento.",
-    icon: "📋"
+    title: "Call Center Integrado",
+    description: "Ferramenta 100% nativa do OneHealth, sem necessidade de integrações. Agilize o atendimento ao cliente e melhore a experiência.",
+    icon: "📞"
   },
   {
     title: "Sistema 100% Online (SaaS)",

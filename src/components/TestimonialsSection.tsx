@@ -1,21 +1,22 @@
+
 import React from 'react';
 import { Card } from '@/components/ui/card';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+
 const testimonials = [{
-  name: "Dra. Marina Silva",
-  position: "Proprietária, Farmácia Vitafarma",
+  name: "Lucas Valões",
+  position: "Gestor, Excel Fórmulas",
   quote: "A migração para o OneHealth foi praticamente instantânea, garantindo total segurança e integridade das nossas informações. Em poucos dias, já estávamos operando com 100% dos nossos dados preservados!",
-  image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
 }, {
-  name: "Paulo Mendes",
-  position: "Diretor, Rede PharmaPure",
+  name: "Marcone Ferreira",
+  position: "Proprietário, A Fórmula",
   quote: "Após tentar vários sistemas no mercado, o OneHealth se destacou pela facilidade de uso e recursos específicos para manipulação. O suporte técnico é excepcional.",
-  image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
 }, {
-  name: "Fernanda Costa",
-  position: "Farmacêutica, Farmácia Integrale",
-  quote: "A integração com prescrições digitais mudou completamente nossa rotina. Hoje conseguimos atender mais clientes, com mais qualidade e menos erros. Recomendo fortemente!",
-  image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80"
+  name: "Igor Brito",
+  position: "Proprietário, Atrium Farma",
+  quote: "A gestão da farmácia se tornou muito mais prática com o OneHealth. Os indicadores disponibilizados nos dão visibilidade completa do negócio, facilitando a tomada de decisões e melhorando nossos resultados financeiros.",
 }];
+
 const TestimonialsSection = () => {
   return <section id="testimonials" className="py-20 bg-white my-[25px]">
       <div className="container mx-auto px-4">
@@ -30,10 +31,7 @@ const TestimonialsSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-start mb-4">
-                <img src={testimonial.image} alt={testimonial.name} className="w-16 h-16 rounded-full object-cover mr-4" onError={e => {
-              e.currentTarget.src = `https://ui-avatars.com/api/?name=${testimonial.name.replace(' ', '+')}&background=005CB9&color=fff`;
-            }} />
+              <div className="mb-4">
                 <div>
                   <h3 className="font-bold text-lg">{testimonial.name}</h3>
                   <p className="text-gray-600 text-sm">{testimonial.position}</p>
@@ -62,4 +60,5 @@ const TestimonialsSection = () => {
       </div>
     </section>;
 };
+
 export default TestimonialsSection;

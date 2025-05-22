@@ -140,7 +140,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Endereço</h4>
-                    <p className="text-gray-700">São José dos Campos - SP</p>
+                    <p className="text-gray-700">Av. Antônio Carlos Magalhães, 846 | 
+Salvador BA</p>
                   </div>
                 </div>
               </div>

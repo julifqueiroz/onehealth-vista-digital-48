@@ -4,10 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/components/ui/use-toast";
+
 const ContactSection = () => {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,37 +14,63 @@ const ContactSection = () => {
     pharmacy: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {
-      name,
-      value
-    } = e.target;
+    const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-  const handleSubmit = (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Here you would typically send this data to your backend
-    console.log('Form submitted:', formData);
+    try {
+      // Create form data to send
+      const emailBody = `
+        Nome: ${formData.name}
+        Email: ${formData.email}
+        Telefone: ${formData.phone}
+        Farmácia: ${formData.pharmacy}
+        Mensagem: ${formData.message}
+      `;
 
-    // Show success message
-    toast({
-      title: "Mensagem enviada com sucesso!",
-      description: "Um de nossos consultores entrará em contato em breve."
-    });
+      // Use mailto link to open email client with pre-filled data
+      const mailtoLink = `mailto:contato@mindtech.tec.br?subject=Contato via Website OneHealth&body=${encodeURIComponent(emailBody)}`;
+      window.open(mailtoLink);
 
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      pharmacy: '',
-      message: ''
-    });
+      // Log form submission for debugging
+      console.log('Form submitted:', formData);
+
+      // Show success message
+      toast({
+        title: "Mensagem enviada com sucesso!",
+        description: "Um de nossos consultores entrará em contato em breve."
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        pharmacy: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Erro ao enviar mensagem",
+        description: "Por favor, tente novamente mais tarde.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
   return <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -97,8 +122,8 @@ const ContactSection = () => {
                 <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar sua farmácia?" rows={4} />
               </div>
               
-              <Button type="submit" className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue text-[960315] bg-[960315] text-[#fffefe] bg-onehealth-red">
-                Enviar Mensagem
+              <Button type="submit" className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue text-[960315] bg-[960315] text-[#fffefe] bg-onehealth-red" disabled={isSubmitting}>
+                {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}
               </Button>
             </form>
           </div>
@@ -169,4 +194,5 @@ Salvador BA</p>
       </div>
     </section>;
 };
+
 export default ContactSection;

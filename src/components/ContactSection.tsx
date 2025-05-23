@@ -30,17 +30,24 @@ const ContactSection = () => {
 
     try {
       // Create form data to send
-      const emailBody = `
-        Nome: ${formData.name}
-        Email: ${formData.email}
-        Telefone: ${formData.phone}
-        Farmácia: ${formData.pharmacy}
-        Mensagem: ${formData.message}
-      `;
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone);
+      formDataToSend.append('pharmacy', formData.pharmacy);
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('to', 'contato@mindtech.tec.br');
+      formDataToSend.append('subject', 'Contato via Website OneHealth');
 
-      // Use mailto link to open email client with pre-filled data
-      const mailtoLink = `mailto:contato@mindtech.tec.br?subject=Contato via Website OneHealth&body=${encodeURIComponent(emailBody)}`;
-      window.open(mailtoLink);
+      // Send form data using a form submission service
+      const response = await fetch('https://formsubmit.co/contato@mindtech.tec.br', {
+        method: 'POST',
+        body: formDataToSend,
+      });
+
+      if (!response.ok) {
+        throw new Error('Falha ao enviar o formulário');
+      }
 
       // Log form submission for debugging
       console.log('Form submitted:', formData);
@@ -86,7 +93,7 @@ const ContactSection = () => {
           <div className="bg-onehealth-gray rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-6">Fale Conosco</h3>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-4" action="https://formsubmit.co/contato@mindtech.tec.br" method="POST">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                   Nome Completo
@@ -121,6 +128,11 @@ const ContactSection = () => {
                 </label>
                 <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Como podemos ajudar sua farmácia?" rows={4} />
               </div>
+              
+              {/* Hidden fields for FormSubmit.co */}
+              <input type="hidden" name="_subject" value="Contato via Website OneHealth" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value={window.location.href} />
               
               <Button type="submit" className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue text-[960315] bg-[960315] text-[#fffefe] bg-onehealth-red" disabled={isSubmitting}>
                 {isSubmitting ? 'Enviando...' : 'Enviar Mensagem'}

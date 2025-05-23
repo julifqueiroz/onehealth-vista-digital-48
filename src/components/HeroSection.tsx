@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
 const HeroSection = () => {
-  return <section className="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-[50px] mx-0 py-[50px] my-[50px]">
+  return <section className="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-[50px] mx-0 py-[50px] my-0 rounded-none">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-8">
           <motion.div initial={{

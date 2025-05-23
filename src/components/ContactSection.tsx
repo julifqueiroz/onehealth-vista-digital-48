@@ -140,7 +140,7 @@ const ContactSection = () => {
           
           <div className="flex flex-col lg:pl-8">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-6">Contato Direto</h3>
+              <h3 className="text-2xl font-bold mb-6 py-[5px] my-[45px]">Contato Direto</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">

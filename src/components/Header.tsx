@@ -57,7 +57,7 @@ const Header = () => {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <Button className="bg-onehealth-red hover:bg-onehealth-darkred transition-colors" onClick={() => {
-              window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Estou interessado em conhecer o OneHealth para minha farmácia de manipulação", "_blank");
+              window.open("https://api.whatsapp.com/send?phone=5571999341805&text=Olá! Estou interessado em conhecer o OneHealth para minha farmácia de manipulação", "_blank");
             }}>
               Falar com Consultor
             </Button>
@@ -81,7 +81,7 @@ const Header = () => {
               </a>
               <div className="px-4 pt-2">
                 <Button className="bg-onehealth-red hover:bg-onehealth-darkred transition-colors w-full" onClick={() => {
-                  window.open("https://api.whatsapp.com/send?phone=5512981008888&text=Olá! Estou interessado em conhecer o OneHealth para minha farmácia de manipulação", "_blank");
+                  window.open("https://api.whatsapp.com/send?phone=5571999341805&text=Olá! Estou interessado em conhecer o OneHealth para minha farmácia de manipulação", "_blank");
                   setMobileMenuOpen(false);
                 }}>
                   Falar com Consultor

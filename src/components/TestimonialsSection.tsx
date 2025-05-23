@@ -15,7 +15,7 @@ const testimonials = [{
   quote: "A gestão da farmácia se tornou muito mais prática com o OneHealth. Os indicadores disponibilizados nos dão visibilidade completa do negócio, facilitando a tomada de decisões e melhorando nossos resultados financeiros."
 }];
 const TestimonialsSection = () => {
-  return <section id="testimonials" className="bg-white my-[25px] py-[50px]">
+  return <section id="testimonials" className="bg-white py-[50px] my-0">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

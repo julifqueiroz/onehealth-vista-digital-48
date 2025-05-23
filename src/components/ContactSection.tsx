@@ -1,12 +1,12 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from "@/components/ui/use-toast";
-
 const ContactSection = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -15,19 +15,19 @@ const ContactSection = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+    const {
+      name,
+      value
+    } = e.target;
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-
     try {
       // Create form data to send
       const formDataToSend = new FormData();
@@ -42,9 +42,8 @@ const ContactSection = () => {
       // Send form data using a form submission service
       const response = await fetch('https://formsubmit.co/contato@mindtech.tec.br', {
         method: 'POST',
-        body: formDataToSend,
+        body: formDataToSend
       });
-
       if (!response.ok) {
         throw new Error('Falha ao enviar o formulário');
       }
@@ -77,8 +76,7 @@ const ContactSection = () => {
       setIsSubmitting(false);
     }
   };
-
-  return <section id="contact" className="py-20 bg-white">
+  return <section id="contact" className="bg-white py-[50px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -206,5 +204,4 @@ Salvador BA</p>
       </div>
     </section>;
 };
-
 export default ContactSection;

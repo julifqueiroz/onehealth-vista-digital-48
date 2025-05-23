@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 const PromotionSection = () => {
-  return <section id="promotion" className="py-20 relative bg-onehealth-gray overflow-hidden">
+  return <section id="promotion" className="relative bg-onehealth-gray overflow-hidden py-[50px]">
       {/* Background decoration */}
       <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-onehealth-blue opacity-10"></div>
       <div className="absolute bottom-10 -left-10 w-32 h-32 rounded-full bg-onehealth-green opacity-10"></div>

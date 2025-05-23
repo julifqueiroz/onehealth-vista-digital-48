@@ -34,7 +34,7 @@ const features = [{
   icon: "✓"
 }];
 const FeaturesSection = () => {
-  return <section id="features" className="py-1 bg-white">
+  return <section id="features" className="bg-white py-[2px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-4xl font-bold mb-4 py-[32px] my-0">

@@ -1,24 +1,21 @@
-
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Avatar, AvatarFallback } from '@/components/ui/avatar';
-
 const testimonials = [{
   name: "Lucas Valões",
   position: "Gestor, Excel Fórmulas",
-  quote: "A migração para o OneHealth foi praticamente instantânea, garantindo total segurança e integridade das nossas informações. Em poucos dias, já estávamos operando com 100% dos nossos dados preservados!",
+  quote: "A migração para o OneHealth foi praticamente instantânea, garantindo total segurança e integridade das nossas informações. Em poucos dias, já estávamos operando com 100% dos nossos dados preservados!"
 }, {
   name: "Marcone Ferreira",
   position: "Proprietário, A Fórmula",
-  quote: "Após tentar vários sistemas no mercado, o OneHealth se destacou pela facilidade de uso e recursos específicos para manipulação. O suporte técnico é excepcional.",
+  quote: "Após tentar vários sistemas no mercado, o OneHealth se destacou pela facilidade de uso e recursos específicos para manipulação. O suporte técnico é excepcional."
 }, {
   name: "Igor Brito",
   position: "Proprietário, Atrium Farma",
-  quote: "A gestão da farmácia se tornou muito mais prática com o OneHealth. Os indicadores disponibilizados nos dão visibilidade completa do negócio, facilitando a tomada de decisões e melhorando nossos resultados financeiros.",
+  quote: "A gestão da farmácia se tornou muito mais prática com o OneHealth. Os indicadores disponibilizados nos dão visibilidade completa do negócio, facilitando a tomada de decisões e melhorando nossos resultados financeiros."
 }];
-
 const TestimonialsSection = () => {
-  return <section id="testimonials" className="py-20 bg-white my-[25px]">
+  return <section id="testimonials" className="bg-white my-[25px] py-[50px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -52,13 +49,8 @@ const TestimonialsSection = () => {
             </Card>)}
         </div>
         
-        <div className="text-center mt-16">
-          <a href="#contact" className="inline-block bg-onehealth-blue text-white py-3 px-6 rounded-md hover:bg-onehealth-darkblue transition-colors">
-            Seja o Próximo Caso de Sucesso
-          </a>
-        </div>
+        
       </div>
     </section>;
 };
-
 export default TestimonialsSection;

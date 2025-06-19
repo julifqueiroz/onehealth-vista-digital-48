@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
+
 const PromotionSection = () => {
   return <section id="promotion" className="relative bg-onehealth-gray overflow-hidden py-[50px]">
       {/* Background decoration */}
@@ -67,7 +69,7 @@ const PromotionSection = () => {
             
             <div className="mt-auto">
               <Button className="w-full bg-onehealth-blue hover:bg-onehealth-darkblue transition-colors" onClick={() => {
-              window.open("https://api.whatsapp.com/send?phone=5571999341805&text=Olá! Quero aproveitar a promoção especial do OneHealth para minha farmácia", "_blank");
+              window.open("https://api.whatsapp.com/send?phone=5571996073520&text=Olá! Quero aproveitar a promoção especial do OneHealth para minha farmácia", "_blank");
             }}>
                 Garanta Esta Oferta
               </Button>
@@ -115,7 +117,7 @@ const PromotionSection = () => {
             
             <div className="mt-auto">
               <Button className="w-full bg-onehealth-green hover:opacity-90 transition-colors" onClick={() => {
-              window.open("https://api.whatsapp.com/send?phone=5571999341805&text=Olá! Quero participar do programa de indicação do OneHealth", "_blank");
+              window.open("https://api.whatsapp.com/send?phone=5571996073520&text=Olá! Quero participar do programa de indicação do OneHealth", "_blank");
             }}>
                 Participar do Programa
               </Button>
@@ -131,4 +133,5 @@ const PromotionSection = () => {
       </div>
     </section>;
 };
+
 export default PromotionSection;

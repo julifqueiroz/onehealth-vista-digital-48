@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
+
 const HeroSection = () => {
   return <section className="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-[50px] mx-0 py-[50px] my-0 rounded-none">
       <div className="container mx-auto px-4">
@@ -24,7 +26,7 @@ const HeroSection = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" className="bg-gradient-onehealth text-white hover:opacity-90 transition-all duration-300 text-base px-8" onClick={() => {
-              window.open("https://api.whatsapp.com/send?phone=5571999341805&text=Olá! Quero agendar uma demonstração do OneHealth para minha farmácia de manipulação", "_blank");
+              window.open("https://api.whatsapp.com/send?phone=5571996073520&text=Olá! Quero agendar uma demonstração do OneHealth para minha farmácia de manipulação", "_blank");
             }}>
                 Agendar Demonstração
               </Button>
@@ -88,4 +90,5 @@ const HeroSection = () => {
       </div>
     </section>;
 };
+
 export default HeroSection;

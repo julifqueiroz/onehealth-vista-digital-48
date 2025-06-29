@@ -12,12 +12,12 @@ const PromotionSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Promoção <span className="text-gradient">Exclusiva</span>
+            Promoções <span className="text-gradient">Exclusivas</span>
           </h2>
-          <p className="text-gray-700 max-w-3xl mx-auto text-xl font-normal">Oferta por tempo limitado: Condições especiais para quem assinar contrato de adesão do OneHealth até 30 de Junho de 2025.</p>
+          <p className="text-gray-700 max-w-3xl mx-auto text-xl font-normal">Ofertas por tempo limitado com condições especiais para sua farmácia.</p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           <Card className="p-8 shadow-xl border-t-4 border-onehealth-blue relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-onehealth-blue text-white px-4 py-1 text-sm font-medium">
               OFERTA ESPECIAL
@@ -76,6 +76,64 @@ const PromotionSection = () => {
             </div>
           </Card>
           
+          <CardClassName="p-8 shadow-xl border-t-4 border-onehealth-red relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-onehealth-red text-white px-4 py-1 text-sm font-medium">
+              CONSULFARMA
+            </div>
+            <h3 className="text-2xl font-bold mb-6">Promoção Consulfarma</h3>
+            
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-start">
+                <div className="bg-onehealth-red/10 p-1 rounded-full mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-onehealth-red" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>20% de desconto</strong> na implantação do sistema OneHealth durante a Consulfarma
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-onehealth-red/10 p-1 rounded-full mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-onehealth-red" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Consultoria gratuita</strong> para análise do seu negócio
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-onehealth-red/10 p-1 rounded-full mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-onehealth-red" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Suporte premium</strong> nos primeiros 3 meses
+                </div>
+              </li>
+              <li className="flex items-start">
+                <div className="bg-onehealth-red/10 p-1 rounded-full mr-3 mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-onehealth-red" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <strong>Condições especiais</strong> de pagamento
+                </div>
+              </li>
+            </ul>
+            
+            <div className="mt-auto">
+              <Button className="w-full bg-onehealth-red hover:bg-onehealth-darkred transition-colors" onClick={() => {
+              window.open("https://api.whatsapp.com/send?phone=5571996073520&text=Olá! Quero aproveitar a promoção da Consulfarma do OneHealth", "_blank");
+            }}>
+                Aproveitar Consulfarma
+              </Button>
+            </div>
+          </Card>
+          
           <Card className="p-8 shadow-xl border-t-4 border-onehealth-green relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-onehealth-green text-white px-4 py-1 text-sm font-medium">
               CASHBACK
@@ -127,7 +185,7 @@ const PromotionSection = () => {
         
         <div className="mt-12 text-center">
           <p className="text-sm text-gray-600">
-            * Ofertas válidas até 30/06/2025. Consulte nossos consultores para mais detalhes e condições.
+            * Oferta especial válida até 31/07/2025. Promoção Consulfarma válida durante o evento. Consulte nossos consultores para mais detalhes e condições.
           </p>
         </div>
       </div>

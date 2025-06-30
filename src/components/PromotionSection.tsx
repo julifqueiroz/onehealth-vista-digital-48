@@ -4,7 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
 const PromotionSection = () => {
-  return <section id="promotion" className="relative bg-onehealth-gray overflow-hidden py-[50px]">
+  return (
+    <section id="promotion" className="relative bg-onehealth-gray overflow-hidden py-[50px]">
       {/* Background decoration */}
       <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-onehealth-blue opacity-10"></div>
       <div className="absolute bottom-10 -left-10 w-32 h-32 rounded-full bg-onehealth-green opacity-10"></div>
@@ -76,7 +77,7 @@ const PromotionSection = () => {
             </div>
           </Card>
           
-          <CardClassName="p-8 shadow-xl border-t-4 border-onehealth-red relative overflow-hidden">
+          <Card className="p-8 shadow-xl border-t-4 border-onehealth-red relative overflow-hidden">
             <div className="absolute top-0 right-0 bg-onehealth-red text-white px-4 py-1 text-sm font-medium">
               CONSULFARMA
             </div>
@@ -189,7 +190,8 @@ const PromotionSection = () => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
 
 export default PromotionSection;

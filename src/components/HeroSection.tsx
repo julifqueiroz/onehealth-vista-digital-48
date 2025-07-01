@@ -70,9 +70,6 @@ const HeroSection = () => {
               <div className="absolute -bottom-4 -left-6 w-1 h-1 bg-green-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
               <div className="absolute top-1/2 -right-8 w-1.5 h-1.5 bg-purple-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '1.5s', animationDuration: '3.5s'}}></div>
               
-              {/* Rotating border effect */}
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-onehealth-red via-blue-500 to-green-500 opacity-30 blur-sm animate-spin" style={{animationDuration: '20s'}}></div>
-              
               {/* Notebook base with enhanced styling */}
               <div className="relative z-10">
                 {/* Screen part with enhanced gradient border */}

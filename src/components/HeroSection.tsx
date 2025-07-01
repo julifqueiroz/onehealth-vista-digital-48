@@ -96,9 +96,9 @@ const HeroSection = () => {
                     <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent z-20 pointer-events-none"></div>
                     <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/10 to-transparent z-20 pointer-events-none"></div>
                     
-                    {/* Dashboard image with enhanced styling */}
+                    {/* Dashboard image with enhanced styling - using new reference */}
                     <img 
-                      src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" 
+                      src="/lovable-uploads/a68134c3-d6aa-4e52-ac70-7972b6478df1.png" 
                       alt="OneHealth Dashboard" 
                       onError={e => {
                         e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";

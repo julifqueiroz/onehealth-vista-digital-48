@@ -55,35 +55,57 @@ const HeroSection = () => {
           delay: 0.3
         }} className="lg:w-1/2">
             <div className="relative mx-auto max-w-md">
-              {/* Notebook base/desk effect */}
-              <div className="absolute -bottom-4 w-[85%] h-3 bg-gradient-to-t from-gray-800 to-gray-600 rounded-[50%] left-[7.5%] blur-md opacity-40"></div>
+              {/* Enhanced shadow effects */}
+              <div className="absolute -bottom-6 w-[90%] h-4 bg-gradient-to-t from-gray-900/30 to-transparent rounded-[50%] left-[5%] blur-lg"></div>
+              <div className="absolute -bottom-2 w-[85%] h-2 bg-gradient-to-t from-onehealth-red/20 to-transparent rounded-[50%] left-[7.5%] blur-sm"></div>
               
-              {/* Notebook base */}
+              {/* Ambient glow effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-onehealth-blue/10 via-onehealth-red/10 to-onehealth-green/10 rounded-xl blur-xl scale-110 opacity-50"></div>
+              
+              {/* Notebook base with enhanced styling */}
               <div className="relative">
-                {/* Screen part - making it more horizontal */}
-                <div className="bg-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-lg" style={{
+                {/* Screen part with gradient border */}
+                <div className="relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-t-lg pt-2 px-2 pb-1 shadow-2xl border border-gray-700" style={{
                 aspectRatio: '16/9'
               }}>
+                  {/* Enhanced window controls */}
                   <div className="flex space-x-1.5 mb-1 ml-1">
-                    <div className="w-2 h-2 rounded-full bg-red-500"></div>
-                    <div className="w-2 h-2 rounded-full bg-yellow-500"></div>
-                    <div className="w-2 h-2 rounded-full bg-green-500"></div>
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-br from-red-400 to-red-600 shadow-sm"></div>
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 shadow-sm"></div>
+                    <div className="w-2 h-2 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-sm"></div>
                   </div>
-                  <div className="overflow-hidden border-t border-gray-700 relative h-[calc(100%-16px)]">
-                    {/* Dashboard image filling the screen */}
-                    <img src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" alt="OneHealth Dashboard" onError={e => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                  }} className="w-full h-full object-fill" />
+                  
+                  {/* Screen content with multiple effects */}
+                  <div className="overflow-hidden border-t border-gray-600 relative h-[calc(100%-16px)] rounded-sm">
+                    {/* Gradient overlay for depth */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10 z-10 pointer-events-none"></div>
+                    
+                    {/* Screen reflection effect */}
+                    <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-white/10 to-transparent z-20 pointer-events-none"></div>
+                    
+                    {/* Dashboard image with enhanced styling */}
+                    <img 
+                      src="/lovable-uploads/a007032f-c9a8-4de8-9e6c-db1c0cd23576.png" 
+                      alt="OneHealth Dashboard" 
+                      onError={e => {
+                        e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
+                      }} 
+                      className="w-full h-full object-fill transform hover:scale-105 transition-transform duration-500 ease-out filter brightness-105 contrast-110 saturate-110" 
+                    />
+                    
+                    {/* Subtle scanline effect */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent bg-[length:100%_4px] opacity-30 z-10 pointer-events-none"></div>
                   </div>
                 </div>
                 
-                {/* Keyboard part - adjusted for more horizontal look */}
-                <div className="bg-gray-300 h-3 rounded-b-xl mt-[1px]"></div>
-                <div className="bg-gray-400 h-1.5 w-[80%] mx-auto rounded-b-xl"></div>
+                {/* Enhanced keyboard part */}
+                <div className="bg-gradient-to-b from-gray-300 to-gray-400 h-3 rounded-b-xl mt-[1px] shadow-inner"></div>
+                <div className="bg-gradient-to-b from-gray-400 to-gray-500 h-1.5 w-[80%] mx-auto rounded-b-xl shadow-sm"></div>
+                
+                {/* Floating elements for extra visual appeal */}
+                <div className="absolute -top-2 -right-2 w-4 h-4 bg-onehealth-red/20 rounded-full blur-sm animate-pulse"></div>
+                <div className="absolute -bottom-2 -left-2 w-3 h-3 bg-onehealth-blue/20 rounded-full blur-sm animate-pulse" style={{animationDelay: '1s'}}></div>
               </div>
-              
-              {/* Stats badge */}
-              
             </div>
           </motion.div>
         </div>

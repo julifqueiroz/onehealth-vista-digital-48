@@ -95,7 +95,7 @@ const HeroSection = () => {
                     
                     {/* Dashboard image with enhanced styling - using new reference */}
                     <img 
-                      src="/lovable-uploads/a68134c3-d6aa-4e52-ac70-7972b6478df1.png" 
+                      src="/lovable-uploads/998158e7-5ce9-44af-8119-00f6cd0bbaa2.png" 
                       alt="OneHealth Dashboard" 
                       onError={e => {
                         e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";

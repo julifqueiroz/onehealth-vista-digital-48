@@ -70,66 +70,63 @@ const HeroSection = () => {
               <div className="absolute -bottom-4 -left-6 w-1 h-1 bg-green-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
               <div className="absolute top-1/2 -right-8 w-1.5 h-1.5 bg-purple-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '1.5s', animationDuration: '3.5s'}}></div>
               
-              {/* Notebook base with enhanced styling */}
+              {/* Modern MacBook-style laptop base */}
               <div className="relative z-10">
-                {/* Screen part with enhanced gradient border */}
-                <div className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 rounded-t-lg pt-2 px-2 pb-1 shadow-2xl border-2 border-gradient-to-r from-onehealth-red/30 via-blue-500/30 to-green-500/30" style={{
-                aspectRatio: '16/9'
+                {/* Screen part with ultra-modern design */}
+                <div className="relative bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900 rounded-lg pt-1 px-1 pb-0.5 shadow-2xl border border-gray-600/30" style={{
+                aspectRatio: '16/10'
               }}>
-                  {/* Enhanced window controls with glow */}
-                  <div className="flex space-x-1.5 mb-1 ml-1">
-                    <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-red-400 to-red-600 shadow-lg shadow-red-500/30 animate-pulse" style={{animationDuration: '2s'}}></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-600 shadow-lg shadow-yellow-500/30 animate-pulse" style={{animationDelay: '0.5s', animationDuration: '2s'}}></div>
-                    <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-green-400 to-green-600 shadow-lg shadow-green-500/30 animate-pulse" style={{animationDelay: '1s', animationDuration: '2s'}}></div>
-                  </div>
-                  
-                  {/* Screen content with enhanced effects */}
-                  <div className="overflow-hidden border-t border-gray-600 relative h-[calc(100%-20px)] rounded-sm">
-                    {/* Multiple gradient overlays for depth */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 z-10 pointer-events-none"></div>
-                    <div className="absolute inset-0 bg-gradient-to-tr from-onehealth-red/5 via-transparent to-blue-500/5 z-10 pointer-events-none"></div>
+                  {/* Modern ultra-thin bezel */}
+                  <div className="relative bg-black rounded-md overflow-hidden h-full">
+                    {/* Notch/camera area (modern MacBook style) */}
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-16 h-1 bg-gray-900 rounded-b-lg z-30"></div>
                     
-                    {/* Enhanced screen reflection effect */}
-                    <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/15 via-white/5 to-transparent z-20 pointer-events-none"></div>
-                    <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/10 to-transparent z-20 pointer-events-none"></div>
-                    
-                    {/* Dashboard image with enhanced styling - using new reference */}
-                    <img 
-                      src="/lovable-uploads/998158e7-5ce9-44af-8119-00f6cd0bbaa2.png" 
-                      alt="OneHealth Dashboard" 
-                      onError={e => {
-                        e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                      }} 
-                      className="w-full h-full object-fill transform hover:scale-110 transition-all duration-700 ease-out filter brightness-110 contrast-115 saturate-120 hover:brightness-115 hover:contrast-120" 
-                    />
-                    
-                    {/* Enhanced scanline effect */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/8 to-transparent bg-[length:100%_3px] opacity-40 z-10 pointer-events-none animate-pulse"></div>
-                    
-                    {/* CRT-style curved edges effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10 z-10 pointer-events-none"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-transparent to-black/5 z-10 pointer-events-none"></div>
+                    {/* Screen content with enhanced effects */}
+                    <div className="relative h-full">
+                      {/* Multiple gradient overlays for depth */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20 z-10 pointer-events-none"></div>
+                      <div className="absolute inset-0 bg-gradient-to-tr from-onehealth-red/5 via-transparent to-blue-500/5 z-10 pointer-events-none"></div>
+                      
+                      {/* Enhanced screen reflection effect */}
+                      <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 via-white/3 to-transparent z-20 pointer-events-none rounded-t-md"></div>
+                      <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/8 to-transparent z-20 pointer-events-none"></div>
+                      
+                      {/* Dashboard image with enhanced styling */}
+                      <img 
+                        src="/lovable-uploads/998158e7-5ce9-44af-8119-00f6cd0bbaa2.png" 
+                        alt="OneHealth Dashboard" 
+                        onError={e => {
+                          e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
+                        }} 
+                        className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-all duration-700 ease-out filter brightness-105 contrast-110 saturate-110 hover:brightness-110 hover:contrast-115" 
+                      />
+                      
+                      {/* Subtle scanline effect */}
+                      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent bg-[length:100%_2px] opacity-30 z-10 pointer-events-none animate-pulse"></div>
+                    </div>
                   </div>
                 </div>
                 
-                {/* Enhanced keyboard part with more detail */}
-                <div className="bg-gradient-to-b from-gray-300 via-gray-350 to-gray-400 h-4 rounded-b-xl mt-[1px] shadow-inner border-t border-gray-400/30"></div>
-                <div className="bg-gradient-to-b from-gray-400 via-gray-450 to-gray-500 h-2 w-[80%] mx-auto rounded-b-xl shadow-lg border-t border-gray-500/30"></div>
-                <div className="bg-gradient-to-b from-gray-500 to-gray-600 h-1 w-[60%] mx-auto rounded-b-lg shadow-sm"></div>
+                {/* Modern MacBook-style base with premium aluminum look */}
+                <div className="relative">
+                  {/* Main base */}
+                  <div className="bg-gradient-to-b from-gray-200 via-gray-250 to-gray-300 h-3 rounded-b-lg shadow-lg border-t border-gray-300/50"></div>
+                  
+                  {/* Trackpad area */}
+                  <div className="bg-gradient-to-b from-gray-300 via-gray-350 to-gray-400 h-1.5 w-[85%] mx-auto rounded-b-lg shadow-inner border-t border-gray-400/30"></div>
+                  
+                  {/* Bottom edge */}
+                  <div className="bg-gradient-to-b from-gray-400 to-gray-500 h-0.5 w-[70%] mx-auto rounded-b-md shadow-sm"></div>
+                  
+                  {/* Apple logo effect */}
+                  <div className="absolute top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gradient-to-br from-gray-400 to-gray-500 rounded-full opacity-60"></div>
+                </div>
                 
                 {/* Enhanced floating elements with varied animations */}
                 <div className="absolute -top-3 -right-3 w-5 h-5 bg-onehealth-red/30 rounded-full blur-md animate-ping" style={{animationDuration: '3s'}}></div>
                 <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-blue-500/30 rounded-full blur-md animate-ping" style={{animationDelay: '1.5s', animationDuration: '4s'}}></div>
                 <div className="absolute top-1/3 -left-4 w-3 h-3 bg-green-500/30 rounded-full blur-sm animate-ping" style={{animationDelay: '2.5s', animationDuration: '5s'}}></div>
                 <div className="absolute bottom-1/3 -right-5 w-2 h-2 bg-purple-500/30 rounded-full blur-sm animate-ping" style={{animationDelay: '0.5s', animationDuration: '3.5s'}}></div>
-                
-                {/* Orbiting elements */}
-                <div className="absolute inset-0 animate-spin" style={{animationDuration: '30s'}}>
-                  <div className="absolute -top-2 left-1/2 w-1 h-1 bg-onehealth-red/50 rounded-full"></div>
-                </div>
-                <div className="absolute inset-0 animate-spin" style={{animationDuration: '25s', animationDirection: 'reverse'}}>
-                  <div className="absolute top-1/2 -right-2 w-1 h-1 bg-blue-500/50 rounded-full"></div>
-                </div>
               </div>
             </div>
           </motion.div>

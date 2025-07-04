@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
-
 const HeroSection = () => {
   return <section className="hero-pattern min-h-screen flex items-center pt-24 pb-12 px-[50px] mx-0 py-[50px] my-0 rounded-none">
       <div className="container mx-auto px-4">
@@ -65,10 +63,22 @@ const HeroSection = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-onehealth-red/10 via-transparent to-blue-500/10 rounded-xl blur-xl scale-110 opacity-40"></div>
               
               {/* Floating particles */}
-              <div className="absolute -top-4 -left-4 w-2 h-2 bg-onehealth-red/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '0s', animationDuration: '3s'}}></div>
-              <div className="absolute -top-2 -right-6 w-1.5 h-1.5 bg-blue-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '1s', animationDuration: '4s'}}></div>
-              <div className="absolute -bottom-4 -left-6 w-1 h-1 bg-green-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '2s', animationDuration: '5s'}}></div>
-              <div className="absolute top-1/2 -right-8 w-1.5 h-1.5 bg-purple-500/40 rounded-full blur-sm animate-bounce" style={{animationDelay: '1.5s', animationDuration: '3.5s'}}></div>
+              <div className="absolute -top-4 -left-4 w-2 h-2 bg-onehealth-red/40 rounded-full blur-sm animate-bounce" style={{
+              animationDelay: '0s',
+              animationDuration: '3s'
+            }}></div>
+              <div className="absolute -top-2 -right-6 w-1.5 h-1.5 bg-blue-500/40 rounded-full blur-sm animate-bounce" style={{
+              animationDelay: '1s',
+              animationDuration: '4s'
+            }}></div>
+              <div className="absolute -bottom-4 -left-6 w-1 h-1 bg-green-500/40 rounded-full blur-sm animate-bounce" style={{
+              animationDelay: '2s',
+              animationDuration: '5s'
+            }}></div>
+              <div className="absolute top-1/2 -right-8 w-1.5 h-1.5 bg-purple-500/40 rounded-full blur-sm animate-bounce" style={{
+              animationDelay: '1.5s',
+              animationDuration: '3.5s'
+            }}></div>
               
               {/* Modern MacBook-style laptop base */}
               <div className="relative z-10">
@@ -92,14 +102,9 @@ const HeroSection = () => {
                       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/8 to-transparent z-20 pointer-events-none"></div>
                       
                       {/* Dashboard image with enhanced styling */}
-                      <img 
-                        src="/lovable-uploads/998158e7-5ce9-44af-8119-00f6cd0bbaa2.png" 
-                        alt="OneHealth Dashboard" 
-                        onError={e => {
-                          e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                        }} 
-                        className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-all duration-700 ease-out filter brightness-105 contrast-110 saturate-110 hover:brightness-110 hover:contrast-115" 
-                      />
+                      <img alt="OneHealth Dashboard" onError={e => {
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
+                    }} className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-all duration-700 ease-out filter brightness-105 contrast-110 saturate-110 hover:brightness-110 hover:contrast-115" src="/lovable-uploads/e7c42d0f-d1ee-410e-a2b3-bda1836304c9.png" />
                       
                       {/* Subtle scanline effect */}
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent bg-[length:100%_2px] opacity-30 z-10 pointer-events-none animate-pulse"></div>
@@ -123,10 +128,21 @@ const HeroSection = () => {
                 </div>
                 
                 {/* Enhanced floating elements with varied animations */}
-                <div className="absolute -top-3 -right-3 w-5 h-5 bg-onehealth-red/30 rounded-full blur-md animate-ping" style={{animationDuration: '3s'}}></div>
-                <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-blue-500/30 rounded-full blur-md animate-ping" style={{animationDelay: '1.5s', animationDuration: '4s'}}></div>
-                <div className="absolute top-1/3 -left-4 w-3 h-3 bg-green-500/30 rounded-full blur-sm animate-ping" style={{animationDelay: '2.5s', animationDuration: '5s'}}></div>
-                <div className="absolute bottom-1/3 -right-5 w-2 h-2 bg-purple-500/30 rounded-full blur-sm animate-ping" style={{animationDelay: '0.5s', animationDuration: '3.5s'}}></div>
+                <div className="absolute -top-3 -right-3 w-5 h-5 bg-onehealth-red/30 rounded-full blur-md animate-ping" style={{
+                animationDuration: '3s'
+              }}></div>
+                <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-blue-500/30 rounded-full blur-md animate-ping" style={{
+                animationDelay: '1.5s',
+                animationDuration: '4s'
+              }}></div>
+                <div className="absolute top-1/3 -left-4 w-3 h-3 bg-green-500/30 rounded-full blur-sm animate-ping" style={{
+                animationDelay: '2.5s',
+                animationDuration: '5s'
+              }}></div>
+                <div className="absolute bottom-1/3 -right-5 w-2 h-2 bg-purple-500/30 rounded-full blur-sm animate-ping" style={{
+                animationDelay: '0.5s',
+                animationDuration: '3.5s'
+              }}></div>
               </div>
             </div>
           </motion.div>
@@ -134,5 +150,4 @@ const HeroSection = () => {
       </div>
     </section>;
 };
-
 export default HeroSection;

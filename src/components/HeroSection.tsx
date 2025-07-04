@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { motion } from 'framer-motion';
@@ -52,7 +53,7 @@ const HeroSection = () => {
           duration: 0.6,
           delay: 0.3
         }} className="lg:w-1/2">
-            <div className="relative mx-auto max-w-md">
+            <div className="relative mx-auto max-w-lg w-full">
               {/* Enhanced shadow effects with multiple layers */}
               <div className="absolute -bottom-10 w-[95%] h-8 bg-gradient-to-t from-gray-900/40 to-transparent rounded-[60%] left-[2.5%] blur-2xl"></div>
               <div className="absolute -bottom-6 w-[90%] h-6 bg-gradient-to-t from-gray-900/30 to-transparent rounded-[50%] left-[5%] blur-lg"></div>
@@ -104,7 +105,7 @@ const HeroSection = () => {
                       {/* Dashboard image with enhanced styling */}
                       <img alt="OneHealth Dashboard" onError={e => {
                       e.currentTarget.src = "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80";
-                    }} className="w-full h-full object-cover rounded-md transform hover:scale-105 transition-all duration-700 ease-out filter brightness-105 contrast-110 saturate-110 hover:brightness-110 hover:contrast-115" src="/lovable-uploads/e7c42d0f-d1ee-410e-a2b3-bda1836304c9.png" />
+                    }} className="w-full h-full object-cover rounded-md transform hover:scale-102 transition-all duration-500 ease-out filter brightness-105 contrast-110 saturate-110 hover:brightness-110 hover:contrast-115" src="/lovable-uploads/998158e7-5ce9-44af-8119-00f6cd0bbaa2.png" />
                       
                       {/* Subtle scanline effect */}
                       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/5 to-transparent bg-[length:100%_2px] opacity-30 z-10 pointer-events-none animate-pulse"></div>
